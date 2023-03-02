@@ -1,0 +1,36 @@
+@import "../../variables";
+@import "../../container.scss";
+
+.page-slider {
+  margin-bottom: 50px; 
+  .pageSwiper {
+    min-width: 1200px;
+    flex-basis: 1150px;
+    height: 632px;
+  }
+  .swiper-pagination2 {
+    position: absolute;
+    --swiper-pagination-left: 0;
+    --swiper-pagination-right: 0;
+    --swiper-pagination-bottom: 0;
+  }
+  .swiper-vertical > .swiper-pagination-bullets {
+    top: 50px;
+  }
+  .swiper-pagination-bullet {
+    width: 2px;
+    height: 25px;
+    border-radius: 0;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: $black;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: $red;
+  }
+  .swiper-slide {
+    padding-left: 50px;
+  }
+}

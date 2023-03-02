@@ -1,0 +1,27 @@
+@import "../variables.scss";
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  margin-right: 70px;
+    &__list {
+      display: flex;
+    }
+    &__item + &__item {
+      padding-left: 10px;
+    }
+    &__link {
+      text-transform: uppercase;
+      padding: 43px 20px;
+      transition: all .3s;
+      &:hover {
+        background-color: $black;
+        color: $white
+      }
+    }
+}

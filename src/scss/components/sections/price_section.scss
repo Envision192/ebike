@@ -1,0 +1,126 @@
+@import "../../variables";
+@import "../../container.scss";
+.price {
+	margin-bottom: 100px;
+	.price__inner {
+		position: relative;
+	}
+	.form {
+		max-width: 420px;
+		.form__title {
+			margin-bottom: 40px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 19px;
+			text-transform: uppercase;
+		}
+		.form__text {
+			margin-bottom: 30px;
+			max-width: 300px;
+		}
+		.form__input-name,.form__input-phone {
+			width: 100%;
+			border-bottom: 1px solid $black;
+			padding-bottom: 10px;
+			margin-bottom: 20px; 
+		}
+		.form__input-name::placeholder,.form__input-phone::placeholder,
+		.form__text-color
+		 {
+			color: $grey;
+			opacity: 0.5;
+		}
+		.form__text-color{
+			margin-bottom: 10px;
+		}
+		.form__label-box {
+			display: flex;
+			margin-bottom: 50px;
+			.form__label + .form__label {
+				margin-left: 23px;
+			}
+			.form__input-radio {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				overflow: hidden;
+				clip: rect(0 0 0 0);
+			}
+			.form__input-radio:checked + .form__bike{
+				display: block;
+			}
+			.form__radio-style {
+				border-radius: 30px;
+				width: 80px;
+				height: 12px;
+			}
+			.form__radio-style--grey{
+				background: $grey;
+			}
+			.form__radio-style--white{
+				background: $white;
+				border: 1px solid $grey;
+			}
+			.form__radio-style--red{
+				background: $red;
+			}
+			.form__bike {
+				display: none;
+				position: absolute;
+				right: 0;
+				top: 0;
+				.form__bike-price {
+					position: absolute;
+					top: 28px;
+					left: 0;
+					right: 0;
+					font-size: 32px;
+					line-height: 70px;
+					width: 150px;
+					height: 70px;
+					text-align: center;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border: 1px solid $red;
+					border-radius: 70%;
+				}
+				.form__bike-price::after {
+					content: "";
+					position: absolute;
+					width: 150px;
+					height: 70px;
+					border: 1px solid $red;
+					border-radius: 70%;
+					top: 8px;
+					left: 0; 
+
+				}
+			}
+		}
+		.form__btn{ 
+			display: inline-block;
+			border: none;
+			padding: 28px 71px 28px 81px;
+			background-color: $black;
+			color: $white;
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: 1.1em;
+			text-transform: uppercase;
+			transition: background-color .3s; 
+		}
+		.form__btn:hover {
+			background-color: $red;
+		}	 
+	}
+} 
+
+
+
+
+
+
+
+.form__bike-img {}
+.form__bike-price {} 

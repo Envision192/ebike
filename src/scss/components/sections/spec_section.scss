@@ -1,0 +1,46 @@
+@import "../../variables";
+@import "../../container.scss";
+.spec {
+	padding-top: 100px;
+	margin-bottom: 150px;
+	&__title {
+		margin: 0 0 40px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+		text-transform: uppercase;
+	}
+	&__inner {
+		display: flex;
+	}
+	&__items {
+		flex-basis: 570px;
+		margin-right: 60px;
+	}
+	&__list + &__list{
+		padding-top: 30px;
+	}
+	&__list-title {
+		font-weight: 700;
+		text-transform: uppercase;
+		background-color: $black
+		;
+		color: $white;
+		padding: 2px 0 3px;
+	}
+	&__list-line {
+		display: flex;
+		padding-top: 5px;
+
+	}
+	&__list-name {
+		flex-basis: 285px;
+		padding-right: 25px;
+	}
+	&__list-descr {
+		flex-basis: 285px;
+	}
+	&__img {
+		align-self: center;
+	}
+} 

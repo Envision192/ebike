@@ -1,0 +1,50 @@
+@import "../variables.scss";
+@import "../container";
+@import "../mixins.scss";
+
+
+@include svg-dimensions;
+
+.footer {
+	background-color: $black;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+	}
+	&__link {
+		font-size: 12px;
+		line-height: 15px;
+		color: $white;
+		text-decoration: underline;
+	}
+	&__socials {
+		display: flex;
+	}
+	&__social-link + &__social-link{
+		margin-left: 26px;
+	}
+	&__contacts { 
+		color: $white;
+		font-size: 12px;
+		line-height: 15px;
+		img {
+			margin-right: 10px;
+		}
+	}
+	&_contacts-link{
+		display: flex; 
+		align-items: center;
+	}
+	&_contacts-link + &_contacts-link{ 
+		margin-top: 10px;
+	}
+} 
+
+
+
+.footer__contacts {}
+
+.footer_contacts-link {}
+
